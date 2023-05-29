@@ -1,0 +1,42 @@
+/************ GROUPE WHATSAPP ***************/
+.grupwhts {
+    position: relative; margin: 10px auto 20px; background: url(https://redcdn.net/hpimg11/pics/362472whatsadhi.png) top center no-repeat;
+    width: 400px; height: 711px; box-shadow: 0 0 2px black; background-size: cover;
+}
+.grupwhts .info {
+ height: 217px; overflow: auto; width: 400px; top: 100px; position: absolute; font-style: normal;
+}
+.grupwhts .icone {
+  position: absolute; width: 40px; top: 38px; left: 31px; border-radius: 100%;
+}
+.grupwhts .nomdugrup {
+  position: absolute; top: 28px; left: 75px; width: 230px; text-transform: uppercase; height: 28px; padding-top: 15px;
+background: #075e54; color: #ededed; font-weight: bold; font-family:arial; font-size: 14px;
+}
+.grupwhts .participants {
+ position: absolute; top: 61px; left: 75px; text-transform: lowercase; width: 240px; height: 28px; background: #075e54; color: #ccc;
+ font-family:arial; font-weight:bold; font-size:10px; overflow: auto;
+}
+.grupwhts .pseunom {
+z-index: 10; top: 110px; margin-top: -8px; left: 75px; font: 700 12px arial;
+}
+.grupwhts .heure {
+font-family: arial; font-size: 8px; margin-left: 80%; margin-top: 2px; color: #aaa; z-index: 10;
+}
+.grupwhts .heure img {
+width: 15px; height: 10px; margin-bottom: -2px;
+}
+.grupwhts .bullmsg {
+position: absolute; /*top: 120px;*/ right: 70px; border-radius: 7px 0 7px 7px; max-width: 250px; max-height: 100px; background: #dbffba; 
+color: #242424; font: 400 12px cursive; padding: 10px; min-width: 180px; overflow:auto; box-shadow: 0 0 1px #aaa;
+}
+.grupwhts .bullinfo {
+background: #d6edf9; border-radius: 5px; box-shadow: 0 0 1px #aaa; color: #4c4c4c; font-family: cursive; font-size: 10px; min-height: 20px;
+width: 200px; position: absolute; right: 88px; text-align: center;
+}
+.grupwhts .photo {
+/*width:50px;*/ /*margin-top:110px;*/ margin-left:340px; border-radius:100%;
+}
+.grupwhts .photo img {
+border-radius: 100%; box-shadow: 0 0 2px #4c4c4c; width: 50px;
+}
