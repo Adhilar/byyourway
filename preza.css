@@ -1,0 +1,138 @@
+/********************** PRESENTATION ******************************/
+.ongPSNG {
+margin:auto; width:500px; 
+}
+
+.ongPSNG:after {
+content: ''; display:table; clear:both;
+}
+
+.ongPSNG input[type=radio] {
+display:none;
+}
+
+.ongPSNG label {
+display:block; float:left; margin:10px auto; width:50%; 
+font-size: 28px; font-family: grand hotel;
+text-transform: lowercase; padding-bottom: 10px;
+padding-top: 20px; 
+}
+
+.ongPSNG label img{
+filter:grayscale(0); -webkit-filter:grayscale(0);
+}
+
+.ongPSNG [id^="OPSNG"]:checked + label {
+filter:opacity(50%); -webkit-filter:opacity(50%);
+}
+
+.contentPSNG {
+display:none; margin:auto;
+width:470px; padding:15px;
+text-align:justify;
+}
+
+#OPSNG1:checked ~ #contentPSNG1,
+#OPSNG2:checked ~ #contentPSNG2,
+#OPSNG3:checked ~ #contentPSNG3,
+#OPSNG4:checked ~ #contentPSNG4,
+#OPSNG5:checked ~ #contentPSNG5,
+#OPSNG6:checked ~ #contentPSNG6,
+#OPSNG7:checked ~ #contentPSNG7,
+#OPSNG8:checked ~ #contentPSNG8,
+#OPSNG9:checked ~ #contentPSNG9,
+#OPSNG10:checked ~ #contentPSNG10,
+#OPSNG11:checked ~ #contentPSNG11,
+#OPSNG12:checked ~ #contentPSNG12 {
+display:block; 
+-moz-animation: anIM 1s ease-in-out;
+animation: anIM 1s ease-in-out;
+-webkit-animation: anIM 1s ease-in-out;
+}
+
+@-webkit-keyframes anIM {0% {
+-webkit-transform:scale(0.9);opacity:0;} 50% {-webkit-transform:scale(2.05); opacity: 0.5;} 100% {
+-webkit-transform:scale(1); opacity: 1;}}
+@keyframes anIM {0% {transform:scale(0.9);opacity:0;} 50% {transform:scale(1.05); opacity: 0.5;} 100% {
+transform:scale(1); opacity: 1;}}
+
+.avaSCEN {
+display:inline-block; vertical-align:top; margin-left:25px; 
+width:200px; height:320px;
+}
+
+.avaSCEN span{
+display:block; margin-top:90px; line-height:normal; font-size:28px;
+transform:scale(0.5); -webkit-transform:scale(0.5); 
+transition:0.55s linear; -webkit-transition:0.55s linear;
+}
+
+.avaSCEN:hover p{opacity:1;}
+.avaSCEN:hover span{
+transform:scale(1); -webkit-transform:scale(1);
+}
+
+.ongZSCN {
+margin:auto; width:500px; 
+}
+
+.ongZSCN:after {
+content: ''; display:table; clear:both;
+}
+
+.ongZSCN input[type=radio] {
+display:none;
+}
+
+.ongZSCN label {
+display:block; float:left; margin:10px auto; 
+width:33.3%; font-size: 28px; font-family: grand hotel;
+text-transform: lowercase; padding-bottom: 10px;
+padding-top: 20px; 
+}
+
+.ongZSCN label img{
+filter:grayscale(0); -webkit-filter:grayscale(0);
+}
+
+.ongZSCN label:hover {
+-webkit-filter: blur(1px); filter: blur(1px);
+}
+
+.ongZSCN [id^="OZSCN"]:checked + label {
+filter:opacity(50%); -webkit-filter:opacity(50%);
+}
+
+.contentZSCN {
+display:none; margin:auto; line-height:1.6; 
+width:465px; padding:15px; overflow:auto; box-sizing:border-box; border:1px dotted;
+font-size:12px; text-align:justify; -webkit-transform: scale(0); 
+-o-transform: scale(0); -moz-transform: scale(0); -webkit-transition-duration: .8s; 
+-moz-transition-duration: .8s; -o-transition-duration: .8s; 
+}
+
+.ongZSCN [id^="OZSCN"]:checked + label ~ .contentZSCN{
+z-index: 4; -webkit-transform: scale(1); 
+-o-transform: scale(1); -moz-transform: scale(1);
+}
+
+
+#OZSCN1:checked ~ #contentZSCN1,
+#OZSCN2:checked ~ #contentZSCN2,
+#OZSCN3:checked ~ #contentZSCN3,
+#OZSCN4:checked ~ #contentZSCN4,
+#OZSCN5:checked ~ #contentZSCN5,
+#OZSCN6:checked ~ #contentZSCN6,
+#OZSCN7:checked ~ #contentZSCN7,
+#OZSCN8:checked ~ #contentZSCN8,
+#OZSCN9:checked ~ #contentZSCN9,
+#OZSCN10:checked ~ #contentZSCN10,
+#OZSCN11:checked ~ #contentZSCN11,
+#OZSCN12:checked ~ #contentZSCN12,
+#OZSCN13:checked ~ #contentZSCN13,
+#OZSCN14:checked ~ #contentZSCN14 {
+display:block; 
+-moz-animation: anIM 1s ease-in-out;
+animation: anIM 1s ease-in-out;
+-webkit-animation: anIM 1s ease-in-out;
+}

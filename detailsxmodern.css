@@ -1,0 +1,532 @@
+/*** ------------------------------- ***/
+/*** POUBELLE DE FORUMACTIF -------- ***/
+
+#find_username br,
+#users_here br,
+#main-content > p,
+.adminlink br,
+.corners-top,
+.corners-bottom {
+    display: none;
+}
+
+#find_username .panel {
+    border: none;
+    margin: 0
+}
+
+.adminlink {
+    clear: both
+}
+
+#cp-main#cp-main#cp-main,
+table,
+.quickreply div#textarea_content {
+    width: 100% !important;
+}
+
+.panel .panel {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.social_btn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/****** ------------------------------------------------------------------------------
+ ****** STRUCTURE DE FORUMACTIF ------------------------------------------------------ 
+
+ ****** Elements de base qui servent Ã construire la structure de la page web --------
+ ****** Il y a peu de chances que vous deviez toucher cette partie du CSS -------------- ******/
+
+
+/*** ------------------------------- ***/
+/* BALISES GENERALES --------------- ***/
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 220px auto;
+    grid-gap: 15px
+}
+
+dd {
+    margin: 0;
+}
+
+dt {
+    margin: 0
+}
+
+dt label {
+    font-weight: bold
+}
+
+button,
+input {
+    border: none
+}
+
+button,
+select,
+input {
+    font-family: var(--font);
+    cursor: pointer;
+}
+
+/* Structure page de connexion */
+
+.fld_connexion dl {
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: 150px auto;
+}
+
+.fld_connexion dl:nth-of-type(2) dd:last-of-type {
+    grid-column: 1 / span 2;
+}
+
+.fld_connexion dl:nth-of-type(3) {
+    margin: 0;
+}
+
+.fld_connexion dl:nth-of-type(n+3) {
+    display: block;
+}
+
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+.visible {
+    display: block;
+    visibility: visible;
+}
+
+
+/* Indicateur complexitÃ© du mot de passe */
+#cont_pwd {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.pwd_img {
+    padding: 2px 6px;
+    display: none;
+    border-radius: 3px;
+}
+
+#pwd_good {
+    background-color: #4CAF50;
+    color: #FFF;
+}
+
+#pwd_middle {
+    background-color: #FFCC00;
+    color: #000;
+}
+
+#pwd_bad {
+    background-color: #F04040;
+    color: #FFF;
+}
+
+
+
+
+
+
+/*** ------------------------------- ***/
+/*** ELEMENTS FLOTTANTS ------------ ***/
+
+/* FenÃªtre popup "recherche" */
+.overview {
+    background: var(--light);
+    border-radius: 5px;
+    border: var(--border);
+    padding: 10px;
+    position: fixed !important;
+    top: 50% !important;
+}
+
+/* Bouton rechercher */
+.overview button[type="submit"] {
+    width: 26px;
+    height: 26px;
+    margin-left: 5px;
+}
+
+.overview div {
+    margin-bottom: 5px
+}
+
+.overview a {
+    float: right;
+}
+
+
+/* BoÃ®te "recherche un utilisateur" */
+#find_username {
+    display: none;
+    position: fixed;
+    left: 50%;
+    width: 450px;
+    margin-left: -225px;
+    top: 50%;
+    margin-top: -125px;
+    background-color: var(--light);
+    padding: 10px;
+    border: var(--border);
+    border-radius: 5px;
+}
+
+
+
+/*** ------------------------------- ***/
+/*** PAGE DE CONNEXION ------------- ***/
+
+/* Centrer les pages de connexion */
+form[name=form_login],
+form[name=form_login] ~ .panel {
+    text-align: center;
+}
+
+form[name=form_login] .content {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+/*** ------------------------------- ***/
+/*** PAGES DE RECHERCHES ----------- ***/
+
+/* RECHERCHE DE MESSAGE -----*/
+
+/* Conteneur d'un message*/
+.post_search {
+    display: grid;
+    grid-template-columns: 200px auto;
+    border-radius: 5px;
+    margin: 10px 0;
+    background: var(--light);
+}
+
+.post_search > div {
+    padding: 10px;
+}
+
+/* Colonne d'information du message */
+.postsearch_infos {
+    border-right: var(--border);
+    font-size: var(--little-size);
+}
+
+
+
+
+/* EDITER SIGNATURE ---*/
+
+#parent_editor_simple > #smiley-box {
+    float: left;
+    /* float: right; -- pour smileys Ã droite */
+}
+
+#parent_editor_simple #message-box {
+    margin-left: 240px;
+    /* margin-right: XXXpx -- pour smileys Ã droite */
+}
+
+#parent_editor_simple #message-box > br {
+    display: none
+}
+
+#parent_editor_simple #message-box > #textarea_content {
+    width: 100% !important;
+}
+
+.panel.row2.sig {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+/*** ------------------------------- ***/
+/*** EDITION DE PROFIL ------------- ***/
+
+/* Onglets dans la modification de profil */
+#tabs ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px
+}
+
+/*onglet*/
+#tabs li {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+
+/* Onglet selectionnÃ© */
+#tabs li.activetab {
+    background: var(--grey);
+    border: var(--border);
+    border-radius: 5px;
+}
+
+/* onglet au survol */
+#tabs li:hover {
+    background: var(--grey);
+    border-radius: 5px;
+    border: var(--border);
+}
+
+/* Suppression de l'onglet "amis et ignorÃ©s" */
+div#tabs li:nth-child(5) {
+    display: none;
+}
+
+
+.profil_preferences dl,
+.profil_editavatar dl {
+    grid-template-columns: 40% auto;
+}
+
+.profil_preferences .italic {
+    font-size: var(--little-size);
+}
+
+
+
+
+
+/****** ------------------------------------------------------------------------------ 
+ ****** MESSAGES PRIVES -------------------------------------------------------------- ******/
+
+/*** ------------------------------- ***/
+/*** LISTE DES MPs ----------------- ***/
+
+/* Menu des MPS */
+#privmsgs-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+#privmsgs-menu li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Affichage d'un MP dans la liste */
+.mp_row {
+    background: var(--light);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 55px auto;
+    grid-gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+/*** ------------------------------- ***/
+/*** AFFICHAGE D'UN MESSAGE PRIVÃ‰ -- ***/
+
+.message {
+    background: var(--light);
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: max-content auto;
+    grid-template-columns: 220px auto;
+}
+
+.message_infos {
+    grid-column: 1 / span 2;
+    border-bottom: 1px solid var(--grey);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mp-icons {
+    display: flex;
+    float: right;
+}
+
+.message_profil {
+    padding: 10px;
+    border-right: 1px solid var(--grey);
+    text-align: center;
+}
+
+.message_content {
+    padding: 10px;
+}
+
+
+
+/* Suppression des liens peu utilisÃ©s*/
+.navbar a[href^="/faq"],
+/*faq*/
+.navbar a[href^="/calendar"],
+/*calendrier*/
+.navbar a[href^="/groups"]
+
+/*groupes*/
+    {
+    display: none
+}
+
+
+
+
+/* STRUCTURE DE LA TOOLBAR 
+ * Il est conseillÃ© de ne rien modifier pour un bon fonctionnement de la toolbar ---*/
+
+#fa_right #fa_menu ul,
+#fa_right.notification #fa_menu ul,
+#fa_right #fa_notifications #notif_unread,
+#notif_list hr {
+    display: none;
+}
+
+#fa_toolbar #live_notif .fa_notification .content {
+    display: inline-block;
+}
+
+#fa_right.welcome #fa_menulist {
+    display: block;
+}
+
+#fa_right.notification #notif_list {
+    display: flex;
+}
+
+#fa_toolbar #fa_right #fa_notifications.unread #notif_unread {
+    display: inline;
+}
+
+#fa_usermenu table {
+    width: 100%;
+}
+
+#fa_usermenu table tr {
+    display: flex;
+    justify-content: center;
+}
+
+.fa_fix {
+    position: fixed;
+    /* right: 0; */
+    top: 0;
+}
+
+
+/*** ------------------------------- ***/
+/*** PAGINATIONS -------------------- ***/
+
+.pagination {}
+
+/*lien unique vers les pages numÃ©rotÃ©es*/
+.pagination span a {
+    font-size: var(--little-size);
+}
+
+/*survol des liens uniques des pages*/
+.pagination span a:hover {
+    font-weight: 700
+}
+
+/*lien actif : page sur laquelle vous vous trouvez */
+.pagination span strong {
+    background-color: var(--grey);
+    border-radius: 3px;
+    padding: 1px 4px;
+}
+
+
+/*suppression de l'image-lien "aller Ã la page suivante" */
+.page-topic span a:last-child,
+.pag-img {
+    display: none;
+}
+
+
+/*** SONDAGE ----------------------- ***/
+
+.poll {
+    background: var(--light);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.head_poll {
+    padding: 10px;
+    border-bottom: 1px solid var(--grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poll_list {
+    display: grid;
+    grid-template-columns: 220px auto;
+}
+
+.poll_option {
+    padding: 10px 20px 0 10px;
+    border-right: 1px solid var(--grey);
+    text-align: right;
+}
+
+.poll_vote {
+    padding: 10px 10px 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.poll_send {
+    margin-left: 220px;
+    padding: 20px 10px 20px 20px;
+    border-left: 1px solid var(--grey);
+}
+
+.poll_vote:nth-child(2),
+.poll_option:first-child {
+    padding-top: 20px;
+}
