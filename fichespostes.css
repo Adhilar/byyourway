@@ -1,0 +1,82 @@
+/* FICHES POSTES */
+
+.bywFC { 
+    padding: 15px 0 15px;
+  line-height: 10px;
+  
+}
+
+.bywFC h2 {
+    font-size: inherit;
+}
+
+.bywFH, .bywFS {
+    background: var(--lighter);
+    padding: 10px;
+    border: 5px solid var(--grey);
+  text-align: justify;
+  line-height: 14px;
+}
+
+.bywFS {
+    padding: 2px;
+}
+
+.imgFH {
+    width: -webkit-fill-available;
+    object-fit: cover;
+    border: 5px solid var(--greyer);
+}
+
+.bywFT1, .bywFT2, .bywFT3 {
+    border: 3px solid var(--light);
+    color: var(--black);
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+  margin: 0 10px;
+    text-shadow: 1px 1px var(--greyish);
+    text-transform: uppercase;
+}
+
+.bywFT1 {
+    background: var(--fgrad);
+}
+
+.bywFT2 {
+    background: var(--deep-color);
+}
+
+.bywFT3 {
+    background: var(--deep-color2);
+}
+
+.bywFTF {
+    background: var(--lighter);
+    margin: 15px 10px;
+    padding: 10px;
+    border: 3px solid var(--light);
+    text-align: justify;
+}
+
+/* FICHE PRENARIO */
+
+.avaFH1, .avaFH2 {
+    margin-right: 10px;
+    width: 80px;
+    height: 128px;
+    float: left;
+}
+
+.avaFH2 {
+    margin-left: 10px;
+    float: right;
+}
+
+.avaFH1 img, .avaFH2 img  {
+    width: 80px;
+    height: 128px;
+    object-fit: cover;
+    padding: 5px;
+    border: 1px solid var(--border1);
+}
