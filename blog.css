@@ -1,0 +1,136 @@
+/****** --------- BLOGS -----------------******/
+
+
+/*** LISTE DES BLOGS --------------- ***/
+
+
+.bloglist {
+background: var(--almostDark);
+    display: grid;
+    grid-template-columns: 65px auto;
+    grid-template-rows: 60px auto;
+    margin-bottom: 10px;
+}
+
+
+.bloglist_date {
+    grid-row: 1 / span 2;
+    padding: 10px;
+    border-right: 1px solid var(--rgba);
+    line-height: 22px;
+    text-align: center;
+}
+
+.blog_daymonth {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.blog_year {
+    font-size: 18px;
+}
+
+.bloglist_details {
+    width:60px; 
+}
+
+
+.bloglist_infos {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.bloglist_resum {
+    padding: 0 10px 10px;
+}
+
+.bloglist_details div {
+    background: var(--neutralDarker);
+    border: 1px solid var(--rgba);
+    padding: 2px 6px;
+    color: var(--accentClrDark);
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/***  AFFICHAGE D'UN BLOG ---------- ***/
+
+.blog_post {
+ background: var(--almostDark);
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 0 10px;
+}
+
+.blog_details {
+padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--neutralDarker);
+    font-size: var(--little-size);
+}
+
+.blog_author {
+    flex-grow: 100;
+}
+
+.familiaire-img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 7px;
+}
+
+fami-trace {
+    background: var(--rgba);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--accentClrDark);
+    font-family: var(--font4);
+}
+
+
+/*** COMMENTAIRES D'UN BLOG -------- ***/
+
+
+.blog_comment {
+border: var(--border);
+    background: var(--neutralDark);
+    margin: 5px auto 10px;
+    padding: 10px;
+}
+
+.comment_avatar {
+    margin-right: 10px;
+    float: left;
+}
+
+.comment_avatar img {
+border-radius: 100%;
+    height: 45px;
+    margin: 0;
+    object-fit: cover;
+    border: 1px solid var(--accentClr);
+    padding: 2px;
+    object-position: center;
+    width: 45px;
+}
+
+.comment_details {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: var(--contrastLighter);
+}
+
+.comment_details .left {
+    flex-grow: 100;
+}
+
+.comment_content {
+    margin-left: 55px;
+}
