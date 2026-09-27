@@ -105,9 +105,10 @@ subtitle {
     background-color: var(--neutral);
     border-radius: 5px;
     color: var(--echral);
-    padding: 10px;
+    padding: 14px;
     width: 45px;
     justify-content: space-around;
+    height: 45px;
 }
 
 #barcteB:checked + label {
