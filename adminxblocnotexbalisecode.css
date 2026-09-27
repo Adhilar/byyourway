@@ -100,15 +100,15 @@ subtitle {
     display: flex;
     left: 15%;
     position: absolute;
-    top: 43%;
+    top: 39%;
     z-index: 999;
     background-color: var(--neutral);
     border-radius: 5px;
     color: var(--echral);
-    padding: 14px;
+    padding: 10px;
     width: 45px;
     justify-content: space-around;
-    height: 45px;
+    height: 38px;
 }
 
 #barcteB:checked + label {
