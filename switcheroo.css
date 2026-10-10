@@ -30,7 +30,7 @@
 .switcheroo {
 color: var(--textColor);
     width: 300px;
-    height: 580px;
+    max-height: 580px;
     position: fixed;
     z-index: 100;
     top: 55px;
